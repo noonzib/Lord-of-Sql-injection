@@ -139,4 +139,10 @@ solve : ?pw='%0aand pw=12311312312312 or id='admin
 memo : %0a -> 줄바꿈  # -> 한줄 주석
 
 
+iron_golem(error based blind)
+
+prob : select id from prob_iron_golem where id='admin' and pw=''
+
+solve : ?pw=06b5a6c16e8830475f983cc3a825ee9a
+
 
