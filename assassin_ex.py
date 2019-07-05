@@ -16,9 +16,9 @@ for i in range(1,10):
         html_data = response.text
         print(response.url)
         if (html_data.find(text) != -1):
-            print "Find Key[+]"
+            print ("Find Key[+]")
             flag+=chr(j)
-            print flag
+            print (flag)
             token=1
             break
     if(token==0):
