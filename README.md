@@ -158,3 +158,12 @@ hell_fire(error based blind)
 prob : select id,email,score from prob_hell_fire where 1 order by
 
 solve : ?pw=admin_secure_email@emai1.com
+
+
+green_dragon
+
+prob : 
+
+solve : 
+
+memo : id=/&pw=union select 0x5c, (select 0x756e696f6e2073656c6563742030783631363436643639366523)
