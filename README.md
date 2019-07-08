@@ -146,3 +146,15 @@ prob : select id from prob_iron_golem where id='admin' and pw=''
 solve : ?pw=06b5a6c16e8830475f983cc3a825ee9a
 
 
+dark_eyes(error based blind)
+
+prob : select id from prob_dark_eyes where id='admin' and pw=''
+
+solve : ?pw=5a2f5d3c
+
+
+hell_fire(error based blind)
+
+prob : select id,email,score from prob_hell_fire where 1 order by
+
+solve : ?pw=admin_secure_email@emai1.com
