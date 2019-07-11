@@ -16,7 +16,7 @@ for i in range(8,length+1):
         html_data = response.text
         print(response.url)
         if (html_data.find("Hello admin") != -1):
-            print "Hello admin"
-            print j
+            print ("Hello admin")
+            print (j)
             break
     
